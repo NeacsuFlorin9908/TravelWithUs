@@ -9,14 +9,16 @@ function verifyPassword(){
        matchingTxt.style.color = 'red';
        matchingTxt.innerHTML = 'Not Matching';
        e.preventDefault();
-       createButton.disabled = true;
+       return false;
+       
+       
        
 
     } else {
-        matchingTxt.style.display = 'block'
-        matchingTxt.style.color = 'green'
-        matchingTxt.innerHTML = 'Matching'
-        createButton.disabled = false;
+        matchingTxt.style.display = 'block';
+        matchingTxt.style.color = 'green';
+        matchingTxt.innerHTML = 'Matching';
+        return true;
     }
     } 
     else {
