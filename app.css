@@ -1,0 +1,138 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+div.image_background{
+    background-image: url("./images/image_background.jpg");
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+div.image_background div.logo_container{
+    background-color: black;
+    width: 100%;
+    height: 15%;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55%;
+}
+div.image_background div.logo_container h1{
+    color: white;
+    font-family: 'Itim', cursive;
+}
+div.image_background div.logo_container img{
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+form section.login_page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+form section.login_page header {
+    background-color: #d9dad5;
+    padding: 5%;
+    width: 90%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+form section.login_page header h1.question_title{
+    width: 70%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 40px;
+    
+}
+form section section.create_account{
+    background-color: white;
+    width: 90%;
+    padding: 5%;
+    height: 50%;
+    box-shadow: 2px 2px 2px red;
+}
+form section.login_page section.create_account div.formContainer{
+    display: grid;
+    float: left;
+    grid-template-columns: repeat(2, 25rem);
+}
+
+form section.login_page section.create_account div.formContainer fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+form section.login_page section.create_account div.formContainer fieldset label{
+    width: 20rem;
+    height: 2rem;
+}
+form section.login_page section.create_account div.formContainer fieldset input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+form section.login_page section.create_account div.formContainer fieldset span{
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+form section.login_page section.create_account div.formContainer fieldset input:focus{
+    box-shadow: 3px 3px 3px gray;
+    border: 3px solid blue;
+}
+form section.login_page footer{
+    height: 25%;
+    background-color: #d9dad5;
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+form section.login_page footer button{
+    width: 20%;
+    padding: 1rem 3rem;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #596d49;
+    color:white;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+form section.login_page footer button:hover{
+    background-color: darkgreen;
+}
+form section.login_page footer h2{
+    font-size: 16px;
+}
+form section.login_page footer h2 a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #596d49;
+}

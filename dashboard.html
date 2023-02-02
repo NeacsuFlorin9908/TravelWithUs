@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dashboard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <label for="search">
+        <img src="./icons/magnify.svg" alt="">
+        <input type="text" id="search" name="search">
+      </label>
+      <img src="./icons/bell.svg" alt="" id="bell-icon">
+      <h3 class="username" id="nameValue"><img src="./icons/cat.png" alt="" id="cat-icon-top">Dynamic Username</h3>
+      <h4 id="greeting-hello">Hi there,</h4>
+      <h1 class="username username-bottom" id="nameValue"><img src="./icons/cat.png" alt="" id="cat-icon-bottom">Dynamic
+        Username</h1>
+
+      <div class="header-buttons">
+        <button type="button">New</button>
+        <button type="button">Upload</button>
+        <button type="button">Share</button>
+      </div>
+    </header>
+
+    <aside class="sidenav">
+      <h1><img src="./icons/dashboard.svg" alt="">Dashboard</h1>
+      <ul>
+        <li><a href="#"><img src="./icons/home.svg" alt="">Home</a></li>
+        <li><a href="#"><img src="./icons/profile.svg" alt="">Profile</a></li>
+        <li><a href="#"><img src="./icons/message.svg" alt="">Messages</a></li>
+        <li><a href="#"><img src="./icons/history.svg" alt="">History</a></li>
+        <li><a href="#"><img src="./icons/tasks.svg" alt="">Tasks</a></li>
+        <li><a href="#"><img src="./icons/communities.svg" alt="">Communities</a></li>
+        <br>
+        <br>
+        <li><a href="#"><img src="./icons/settings.svg" alt="">Settings</a></li>
+        <li><a href="#"><img src="./icons/support.svg" alt="">Support</a></li>
+        <li><a href="#"><img src="./icons/privacy.svg" alt="">Privacy</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Section with 6 cards-->
+    <main>
+      <h2>Your Projects</h2>
+      <section id="card-container-main">
+        <div class="all-cards card-main">
+          <h3>Super Cool Project</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, ex. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Impedit quo enim doloribus.</p>
+          <span class="card-icons">
+            <img src="./icons/star.svg" alt="">
+            <img src="./icons/eye.svg" alt="">
+            <img src="./icons/share.svg" alt="">
+          </span>
+        </div>
+        <div class="all-cards card-main">
+          <h3>Less Cool Project</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium. Quibusdam, explicabo? Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Architecto, vero.</p>
+          <span class="card-icons">
+            <img src="./icons/star.svg" alt="">
+            <img src="./icons/eye.svg" alt="">
+            <img src="./icons/share.svg" alt="">
+          </span>
+        </div>
+        <div class="all-cards card-main">
+          <h3>Impossible App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestias? Lorem ipsum dolor sit amet
+            consectetur accusantium? Minus quasi assumenda odio voluptas hic.
+          </p>
+          <span class="card-icons">
+            <img src="./icons/star.svg" alt="">
+            <img src="./icons/eye.svg" alt="">
+            <img src="./icons/share.svg" alt="">
+          </span>
+        </div>
+        <div class="all-cards card-main">
+          <h3>Easy Peasy App</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium nihil animi voluptate delectus
+            nam!</p>
+          <span class="card-icons">
+            <img src="./icons/star.svg" alt="">
+            <img src="./icons/eye.svg" alt="">
+            <img src="./icons/share.svg" alt="">
+          </span>
+        </div>
+        <div class="all-cards card-main">
+          <h3>Ad Blocker</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, rerum! Dolore, obcaecati adipisci.</p>
+          <span class="card-icons">
+            <img src="./icons/star.svg" alt="">
+            <img src="./icons/eye.svg" alt="">
+            <img src="./icons/share.svg" alt="">
+          </span>
+        </div>
+        <div class="all-cards card-main">
+          <h3>Money Maker</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias praesentium delectus qui illum debitis
+            similique necessitatibus ipsum dolor repellendus corporis!</p>
+          <span class="card-icons">
+            <img src="./icons/star.svg" alt="">
+            <img src="./icons/eye.svg" alt="">
+            <img src="./icons/share.svg" alt="">
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Aside section with 2 cards -->
+    <article>
+      <h2>Announcemnents</h2>
+      <section id="card-container-article">
+        <div class="all-cards card-article-1">
+          <h3>Site Maintainance</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ipsa!</p>
+          <hr>
+          <h3>Community Share Day</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam aperiam libero?</p>
+          <hr>
+          <h3>Updated Privacy Policy</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <h2>Trending</h2>
+        <div class="all-cards card-article-2">
+          <h3 class="username username-article"><img src="./icons/cat.png" alt="">Dynamic Username <p>something about
+              them</p>
+          </h3>
+          <h3 class="username username-article"><img src="./icons/alien.png" alt="">Dynamic Username <p>something about
+              them</p>
+          </h3>
+          <h3 class="username username-article"><img src="./icons/smiley.png" alt="">Dynamic Username <p>something about
+              them</p>
+          </h3>
+          <h3 class="username username-article"><img src="./icons/turtle.png" alt="">Dynamic Username <p>something about
+              them</p>
+          </h3>
+        </div>
+      </section>
+    </article>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

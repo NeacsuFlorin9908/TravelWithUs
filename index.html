@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <title>Travel With Us</title>
+</head>
+
+<body>
+    <div class="image_background">
+        <div class="logo_container">
+            <img src="./images/logo.jpg" alt="Free license image">
+            <h1 class="logo">Travel With Us</h1>
+        </div>
+    </div>
+    <form action="./dashboard.html" method="get" onsubmit="return verifyPassword()">
+        <section class="login_page">
+            <header>
+                <h1 class="question_title">Do you want to get the best trip to a paradisiac island? Sign up now
+                    to get started.</h1>
+                <h1 class="question_title">You know you want to.</h1>
+            </header>
+            <section class="create_account">
+                <h1 class="form_starter">Let's do this!</h1>
+                <div class="formContainer">
+                    <fieldset>
+                        <label for="first_name" id="first_name">FIRST NAME</label>
+                        <input type="text" id="nameInput" placeholder="Your first name..." required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="first_name" id="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" placeholder="Your last name..." required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="first_name" id="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="youremail@gmail.com" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="first_name" id="phone_number">PHONE NUMBER</label>
+                        <input type="text" id="phone_number" placeholder="0040720000000" required minlength="13"
+                            maxlength="14" number>
+                    </fieldset>
+                    <fieldset>
+                        <label for="first_name" id="password">PASSWORD</label>
+                        <input type="password" id="passwordInput" placeholder="Password between 6-14 characters"
+                            required>
+                        <span class="matching" id="matching">Not Matching</span>
+                    </fieldset>
+                    <fieldset>
+                        <label for="first_name" id="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_passwordInput" placeholder="Retype your password..."
+                            required>
+                    </fieldset>
+
+                </div>
+
+            </section>
+            <footer>
+                <button type="submit" onSubmit="verifyPassword()" class="create_account" id="createButton">Create
+                    Account</button>
+                <h2 class="already">Already have an account? <a href="./login.html">Log in</a></h2>
+            </footer>
+        </section>
+    </form>
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>

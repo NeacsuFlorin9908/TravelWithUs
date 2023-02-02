@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    text-decoration: none;
+    margin:0;
+    background-color: #d9dad5;
+}
+div.login_form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.login_form div.container{
+    background-image: url(./images/image_background.jpg);
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.login_form div.container form fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+div.login_form div.container form fieldset label{
+    font-size: 30px;
+}
+div.login_form div.container form fieldset input{
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div.login_form div.container form fieldset input:focus{
+    border: 3px solid blue;
+    box-shadow: 3px 3px 3px gray;
+}
+div.login_form div.container button{
+    width: 80%;
+    padding: 1rem 3rem;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #596d49;
+    color:white;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+div.login_form div.container button:hover{
+    background-color: darkgreen;
+}
+div.login_form div.container a{
+    width: 40%;
+    padding: 1rem 3rem;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #596d49;
+    color:white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+div.login_form div.container a:hover{
+    background-color: darkgreen;
+}
