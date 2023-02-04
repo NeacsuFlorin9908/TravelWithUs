@@ -1,8 +1,12 @@
+html {
+  height: 100vh;
+  width: 100%;
+}
 body{
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -10,12 +14,11 @@ body{
 }
 div.image_background{
     background-image: url("./images/image_background.jpg");
+    background-size: cover;
     width: 40%;
-    height: 100%;
+    min-height: 100%;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     
 }
 div.image_background div.logo_container{
@@ -26,19 +29,20 @@ div.image_background div.logo_container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 55%;
+    margin-top: 55%;
 }
 div.image_background div.logo_container h1{
+    font-size: 4rem;
     color: white;
     font-family: 'Itim', cursive;
 }
 div.image_background div.logo_container img{
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     margin-right: 2rem;
 }
 form{
-    width: 100%;
+    width: 65%;
     height: 100%;
 }
 form section.login_page{
@@ -59,6 +63,7 @@ form section.login_page header {
     flex-direction: column;
 }
 form section.login_page header h1.question_title{
+    font-size: 4rem;
     width: 70%;
     float: left;
     display: flex;
@@ -95,6 +100,28 @@ form section.login_page section.create_account div.formContainer fieldset input{
     border-radius: 5px;
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid+p {
+  display: block;
+}
+input:focus:not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input~p {
+  height: fit-content;
+  width: 100%;
+  display: none;
+  color: red;
+  font-size: 12px;
 }
 form section.login_page section.create_account div.formContainer fieldset span{
     display: none;
@@ -135,4 +162,44 @@ form section.login_page footer h2 a{
     font-size: 16px;
     text-decoration: none;
     color: #596d49;
+}
+@media screen and (max-width: 1450px) {
+   form section.login_page header h1.question_title{
+        
+        font-size: 2rem;
+    }
+  body {
+    flex-direction: column;
+  }
+  .logo_container {
+    display: none;
+  }
+  div.image_background{
+    display: none;
+  }
+  form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+    form section.login_page header h1.question_title{
+        font-size: 1rem;
+    }
+  body {
+    flex-direction: column;
+  }
+  .logo_container {
+    display: none;
+  }
+  div.image_background{
+    display: none;
+  }
+  form {
+    width: 100%;
+  }
+  form section.login_page section.create_account div.formContainer{
+    display: grid;
+    float: left;
+    grid-template-columns: repeat(1, 25rem);
+}
 }

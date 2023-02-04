@@ -16,7 +16,7 @@
             <h1 class="logo">Travel With Us</h1>
         </div>
     </div>
-    <form action="./dashboard.html" method="get" onsubmit="return verifyPassword()">
+    <form action="./dashboard.html" method="get" onsubmit="return verify()">
         <section class="login_page">
             <header>
                 <h1 class="question_title">Do you want to get the best trip to a paradisiac island? Sign up now
@@ -28,30 +28,47 @@
                 <div class="formContainer">
                     <fieldset>
                         <label for="first_name" id="first_name">FIRST NAME</label>
-                        <input type="text" id="nameInput" placeholder="Your first name..." required>
+                        <input type="text" name="first_name" id="firstNameInput" placeholder="Your first name..."
+                            pattern="[A-Za-z]+[A-Za-z -]+[A-Za-z]+"
+                            title="*First names must start and end with a letter and can contain only letters, spaces and -."
+                            required>
+                        <p>*First names must start and end with a letter and can contain only letters, spaces or -.</p>
                     </fieldset>
                     <fieldset>
-                        <label for="first_name" id="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" placeholder="Your last name..." required>
+                        <label for="first_name" name="last_name" id="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" placeholder="Your last name..."
+                            pattern="[A-Za-z]+[A-Za-z -]+[A-Za-z]+"
+                            title="*Last names must start and end with a letter and can contain only letters, spaces and -."
+                            required>
+                        <p>*Last names must start and end with a letter and can contain only letters, spaces or -.</p>
                     </fieldset>
                     <fieldset>
                         <label for="first_name" id="email">EMAIL</label>
                         <input type="email" id="email" placeholder="youremail@gmail.com" required>
+                        <p>You need to use an email domain.(@gmail.com, @yahoo.com, etc.)</p>
                     </fieldset>
                     <fieldset>
                         <label for="first_name" id="phone_number">PHONE NUMBER</label>
-                        <input type="text" id="phone_number" placeholder="0040720000000" required minlength="13"
-                            maxlength="14" number>
+                        <input type="text" id="phone_number" placeholder="+40720000000" minlength="13" maxlength="14"
+                            title="Format: country code (+ max 7 digits or -) + number (8-11 digits) &#010;Ex: +40720000000"
+                            pattern="[+][0-9|-]{1,7}[0-9]{8,11}" required>
+                        <p>*Phone number format must be country code (+ max 7 digits or -) + number (8-11 digits)
+                            <br>Ex: +40720000000.
+                        </p>
                     </fieldset>
                     <fieldset>
                         <label for="first_name" id="password">PASSWORD</label>
                         <input type="password" id="passwordInput" placeholder="Password between 6-14 characters"
+                            pattern="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$"
+                            title="Password needs to be at least 8 characters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol"
                             required>
                         <span class="matching" id="matching">Not Matching</span>
                     </fieldset>
                     <fieldset>
                         <label for="first_name" id="confirm_password">CONFIRM PASSWORD</label>
                         <input type="password" id="confirm_passwordInput" placeholder="Retype your password..."
+                            pattern="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$"
+                            title="Password needs to be at least 8 characters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol"
                             required>
                     </fieldset>
 
