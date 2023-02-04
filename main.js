@@ -8,7 +8,7 @@ function verifyPassword(){
        matchingTxt.style.display = 'block';
        matchingTxt.style.color = 'red';
        matchingTxt.innerHTML = 'Not Matching';
-       e.preventDefault();
+       
        return false;
        
        
@@ -24,4 +24,5 @@ function verifyPassword(){
     else {
         matchingTxt.style.display = 'none'
     }  
+    
 }
